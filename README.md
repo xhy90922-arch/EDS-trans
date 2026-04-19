@@ -114,14 +114,14 @@ Run target-domain adaptation using all available source models. The `--t` argume
 
 ```shell
 # Example: Office-31, target = DSLR (index 1)
-python train_target.py --dset office-31 --t 1 --max_epoch 15 \
+python train_target.py --dset office-31 --t 1 --max_epoch 40 \
     --gpu_id 0 --net swin_b \
     --cls_par 0.7 --crc_par 0.1 --crc_mse 0.1 \
     --temperature 1.15 --beta 0.15 \
     --output_src my/source/ --output my/MSFDA
 
 # Example: Office-Home, target = Clipart (index 1)
-python train_target.py --dset office-home --t 1 --max_epoch 15 \
+python train_target.py --dset office-home --t 1 --max_epoch 40 \
     --gpu_id 0 --net swin_b \
     --cls_par 0.7 --crc_par 0.1 --crc_mse 0.1 \
     --temperature 1.15 --beta 0.15 \
