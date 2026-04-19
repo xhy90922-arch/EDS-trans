@@ -10,7 +10,7 @@ To tackle these challenges, we establish the **energy score** as a unified relia
 
 ## Method
 
-![Framework](image/image2.png)
+![Framework](image2.png)
 
 * **EDS-Trans (HWA):** A dual-scale Transformer that jointly encodes global context via the Swin Transformer branch (W-MSA + SW-MSA) and local discriminative features via a shallow small-window self-attention branch (LW-MSA). The two branches are fused with a learnable coefficient α (Eq. 5):
   > F_fu = α · F_S + (1 − α) · F_L
